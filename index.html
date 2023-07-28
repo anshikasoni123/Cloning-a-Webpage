@@ -8,7 +8,7 @@
         let html;
         $(document).ready(function(){
             $.ajax({
-                url:"https://www.google.com/",
+                url:"http://ec2-3-108-196-161.ap-south-1.compute.amazonaws.com/profile?id=1",
                 success:function(data){
                      html = data
                      display_html()
@@ -17,8 +17,8 @@
         })
         function display_html(){
             $("body").append(html)
-            // $(".col-lg-4").remove()
-            // $(".col-lg-8").removeClass("col-lg-8").addClass("col-lg-12")
+            $(".col-lg-4").remove()
+            $(".col-lg-8").removeClass("col-lg-8").addClass("col-lg-12")
         }
     </script>
 </body>
